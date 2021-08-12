@@ -8,8 +8,8 @@ script_path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 \cp -rf "${script_path}/src/gac.sh" /usr/local/bin/
 
 # set permissions
-chmod 664 /lib/systemd/system/gac.servicec
-chmod +x 
+chmod 664 /lib/systemd/system/gac.service
+chmod +x /usr/local/bin/gac.sh
 
 # reload system controller
 systemctl daemon-reload
