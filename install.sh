@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
 
+# present working directory
 script_path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
-echo $script_path
+# copy scripts and servicec
+\cp -rf "${script_path}/src/gac.servicec" /lib/systemd/system/
+\cp -rf "${script_path}/src/gac.sh" /usr/local/bin/
+
+# set permissions
+chmod 664 /lib/systemd/system/gac.servicec
+chmod +x 
+
+# reload system controller
+systemctl daemon-reload
+systemctl enable test.service
