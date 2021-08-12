@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set +x
+set -x
 
 # present working directory
 script_path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
@@ -16,3 +16,7 @@ chmod +x /usr/local/bin/gac.sh
 # reload system controller
 systemctl daemon-reload
 systemctl enable test.service
+
+
+
+set +x
