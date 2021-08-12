@@ -1,0 +1,11 @@
+[Unit]
+Description=Git Auto Commander
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/gac.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
