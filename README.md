@@ -14,8 +14,8 @@ sudo bash install.sh
 
 ### configuration
 
-for change the auto running repo address you can edit /etc/gac/config.sh file
-you only can enter a raw version of script
+for change the auto running repo address you can edit */etc/gac/config.sh* file
+you only can enter a *raw* version of script
 
 ```
 #!/usr/bin/env bash
