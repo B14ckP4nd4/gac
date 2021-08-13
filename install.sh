@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# install Dependencies
+
+yes | yum group install "Development Tools"
+yes | yum install inotify-tools diffutils
 
 # present working directory
 script_path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
