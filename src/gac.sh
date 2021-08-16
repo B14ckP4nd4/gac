@@ -4,7 +4,7 @@ source /etc/gac/config.sh
 
 while true; do
 
-    if [ !-f /etc/gac/running ]; then
+    if [ ! -f /etc/gac/running ]; then
         bash $command_path
         cat /dev/null > /etc/gac/running
     fi
